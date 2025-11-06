@@ -1,8 +1,8 @@
 package main
 
-import "github.com/lance4117/ProcTrail/internal/service"
+import "github.com/lance4117/ProcTrail/internal/cli"
 
 func main() {
 	// start Process Trailer
-	service.Execute()
+	cli.Execute()
 }
