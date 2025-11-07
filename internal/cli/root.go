@@ -41,7 +41,7 @@ func init() {
 	rootCmd.Flags().StringVarP(&processName, "name", "n", "", "Process name to monitor")
 	rootCmd.Flags().IntVarP(&interval, "interval", "i", 0, "Sampling interval in seconds (0 for one-time sampling)")
 	rootCmd.Flags().IntVarP(&duration, "duration", "d", 0, "Total duration to monitor in seconds (0 for indefinite)")
-	rootCmd.Flags().StringVarP(&outputFormat, "format", "f", "json", "Output format (csv, json, jsonl, xml)")
+	rootCmd.Flags().StringVarP(&outputFormat, "format", "f", "csv", "Output format (csv, json, jsonl, xml)")
 	rootCmd.Flags().StringVarP(&outputFile, "output", "o", "", "Output file path (default: stdout)")
 	rootCmd.Flags().BoolVar(&prettyPrint, "pretty", false, "Pretty print output (for json and xml)")
 }
